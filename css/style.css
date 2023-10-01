@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+* {
+    background-color: hsl(212, 46%, 89%);
+    font-family: Outfit;
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.atributtion {
+    font-size: 11px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.atributtion a {
+    color: hsl(218deg, 44%, 22%);
+}
+
+
+.conte_sec {
+    display: flex;
+    margin: 10% 0px;
+    width: 268px;
+    padding: 14px 13px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0;
+    transition: box-shadow 1s;
+
+}
+
+.conte_sec:hover {
+    box-shadow: 5px 8px rgba(73, 73, 73, 0.486);
+    transition: 500ms linear;
+}
+
+.conte_sec h1,
+.conte_sec p {
+    background-color: rgb(255, 255, 255)
+}
+
+.conte_sec h1 {
+    font-size: 20px;
+
+    margin: 5px;
+}
+
+.conte_sec p {
+    color: gray;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.img_qr {
+    height: 270px;
+    border-radius: 1rem
+}
+
+@media screen and (max-width: 284px),
+(max-height:462px) {
+
+    .conte_sec,
+    .conte_sec h1,
+    .conte_sec p {
+        max-width: 50vh;
+        max-height: 80vh;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        font-size: 0.7rem;
+        overflow: hidden;
+
+    }
+}
+
+@media screen and (max-width: 284px),
+(max-height:462px) {
+    .img_qr {
+        max-width: 50vh;
+        max-height: 50vh;
+        width: auto;
+        height: auto;
+
+    }
+}
